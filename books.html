@@ -61,11 +61,54 @@
         <h1>Book Recommendations</h1> 
         <p>Explore our curated list of must-read books across various genres.</p>
         <ul>
-            <li><a href="#">Fiction</a></li>
-            <li><a href="#">Non-Fiction</a></li>
-            <li><a href="#">Mystery & Thriller</a></li>
-            <li><a href="#">Science Fiction & Fantasy</a></li>
-            <li><a href="#">Romance</a></li>
+           <ul>
+  <li onclick="toggle('fiction')">Fiction ▼
+    <ul id="fiction" style="display:none">
+      <li>Pride and Prejudice - Jane Austen</li>
+      <li>To Kill a Mockingbird - Harper Lee</li>
+      <li>The Great Gatsby - F. Scott Fitzgerald</li>
+    </ul>
+  </li>
+  <li onclick="toggle('nonfiction')">Non-Fiction ▼
+    <ul id="nonfiction" style="display:none">
+      <li>Educated - Tara Westover</li>
+      <li>Sapiens - Yuval Noah Harari</li>
+      <li>Becoming - Michelle Obama</li>
+    </ul>
+  </li>
+  <li onclick="toggle('mystery')">Mystery & Thriller ▼
+    <ul id="mystery" style="display:none">
+      <li>Gone Girl - Gillian Flynn</li>
+      <li>The Girl with the Dragon Tattoo - Stieg Larsson</li>
+      <li>Big Little Lies - Liane Moriarty</li>
+    </ul>
+  </li>
+  <li onclick="toggle('scifi')">Science Fiction & Fantasy ▼
+    <ul id="scifi" style="display:none">
+      <li>Dune - Frank Herbert</li>
+      <li>The Hobbit - J.R.R. Tolkien</li>
+      <li>A Court of Thorns and Roses - Sarah J. Maas</li>
+    </ul>
+  </li>
+  <li onclick="toggle('romance')">Romance ▼
+    <ul id="romance" style="display:none">
+      <li>The Notebook - Nicholas Sparks</li>
+      <li>Outlander - Diana Gabaldon</li>
+      <li>It Ends with Us - Colleen Hoover</li>
+    </ul>
+  </li>
+</ul>
+
+<script>
+  function toggle(id) {
+    var el = document.getElementById(id);
+    if (el.style.display === 'none') {
+      el.style.display = 'block';
+    } else {
+      el.style.display = 'none';
+    }
+  }
+</script>
         </ul>
         <a href="index.html">Back to Home</a>
     </body>

@@ -7,7 +7,6 @@ body {
                 color: #f0e6d3;
                 text-align: center;
                 padding: 50px;
-                padding-top: 80px;
            }
             h1 {
                 color: #4db8c4;
@@ -27,20 +26,4 @@ body {
             }
             li {
                 margin: 15px 0;
-            }
-             nav {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 15px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    box-sizing: border-box;
-}
-            nav a {
-                color: #4db8c4;
-                margin: 0 20px;
-                text-decoration: none;
-                font-size: 18px;
             }

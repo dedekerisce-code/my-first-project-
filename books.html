@@ -3,6 +3,32 @@
     <head>
         <title>Book Recommendations</title>
         <link rel="stylesheet" href="style.css">
+        <style>
+            .genre-section { margin: 30px 0; }
+            .genre-title { cursor: pointer; font-size: 28px; color: #4db8c4; }
+            .book-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                margin-top: 20px;
+                max-width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .book-card {
+                background: rgba(0,0,0,0.5);
+                border-radius: 10px;
+                padding: 15px;
+                text-align: center;
+            }
+            .book-card img {
+                width: 100px;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+            .book-card p { font-size: 14px; margin-top: 8px; }
+        </style>
     </head>
     <body>
         <nav>
@@ -13,101 +39,108 @@
         </nav>
         <h1>Book Recommendations</h1>
         <p>Explore our curated list of must-read books across various genres.</p>
+
         <div class="genre-section">
-          <p class="genre-title" onclick="toggle('fiction')">Fiction ▼</p>
-          <div id="fiction" class="book-grid" style="display:none">
-            <div class="book-card">
-              <img src="https://covers.openlibrary.org/b/isbn/9780141439518-M.jpg">
-              <p>Pride and Prejudice<br>Jane Austen</p>
+            <p class="genre-title" onclick="toggle('fiction')">Fiction ▼</p>
+            <div id="fiction" class="book-grid" style="display:none">
+                <div class="book-card">
+                    <img src="https://covers.openlibrary.org/b/isbn/9780141439518-M.jpg">
+                    <p>Pride and Prejudice<br>Jane Austen</p>
+                </div>
+                <div class="book-card">
+                    <img src="https://covers.openlibrary.org/b/isbn/9780061935466-M.jpg">
+                    <p>To Kill a Mockingbird<br>Harper Lee</p>
+                </div>
+                <div class="book-card">
+                    <img src="https://covers.openlibrary.org/b/isbn/9780743273565-M.jpg">
+                    <p>The Great Gatsby<br>F. Scott Fitzgerald</p>
+                </div>
             </div>
-            <div class="book-card">
-              <img src="https://covers.openlibrary.org/b/isbn/9780061935466-M.jpg">
-              <p>To Kill a Mockingbird<br>Harper Lee</p>
-            </div>
-            <div class="book-card">
-              <img src="https://covers.openlibrary.org/b/isbn/9780743273565-M.jpg">
-              <p>The Great Gatsby<br>F. Scott Fitzgerald</p>
-            </div>
-          </div>
         </div>
+
         <div class="genre-section">
-          <p class="genre-title" onclick="toggle('nonfiction')">Non-Fiction ▼</p>
-          <div id="nonfiction" class="book-grid" style="display:none">
-            <div class="book-card">
-              <img src="https://covers.openlibrary.org/b/isbn/9780399590504-M.jpg">
-              <p>Educated<br>Tara Westover</p>
+            <p class="genre-title" onclick="toggle('nonfiction')">Non-Fiction ▼</p>
+            <div id="nonfiction" class="book-grid" style="display:none">
+                <div class="book-card">
+                    <img src="https://covers.openlibrary.org/b/isbn/9780399590504-M.jpg">
+                    <p>Educated<br>Tara Westover</p>
+                </div>
+                <div class="book-card">
+                    <img src="https://covers.openlibrary.org/b/isbn/9780062316097-M.jpg">
+                    <p>Sapiens<br>Yuval Noah Harari</p>
+                </div>
+                <div class="book-card">
+                    <img src="https://covers.openlibrary.org/b/isbn/9781524763138-M.jpg">
+                    <p>Becoming<br>Michelle Obama</p>
+                </div>
             </div>
-            <div class="book-card">
-              <img src="https://covers.openlibrary.org/b/isbn/9780062316097-M.jpg">
-              <p>Sapiens<br>Yuval Noah Harari</p>
-            </div>
-            <div class="book-card">
-              <img src="https://covers.openlibrary.org/b/isbn/9781524763138-M.jpg">
-              <p>Becoming<br>Michelle Obama</p>
-            </div>
-          </div>
         </div>
+
         <div class="genre-section">
-          <p class="genre-title" onclick="toggle('mystery')">Mystery & Thriller ▼</p>
-          <div id="mystery" class="book-grid" style="display:none">
-            <div class="book-card">
-              <img src="https://covers.openlibrary.org/b/isbn/9780307588371-M.jpg">
-              <p>Gone Girl<br>Gillian Flynn</p>
+            <p class="genre-title" onclick="toggle('mystery')">Mystery & Thriller ▼</p>
+            <div id="mystery" class="book-grid" style="display:none">
+                <div class="book-card">
+                    <img src="https://covers.openlibrary.org/b/isbn/9780307588371-M.jpg">
+                    <p>Gone Girl<br>Gillian Flynn</p>
+                </div>
+                <div class="book-card">
+                    <img src="https://covers.openlibrary.org/b/isbn/9780307949486-M.jpg">
+                    <p>The Girl with the Dragon Tattoo<br>Stieg Larsson</p>
+                </div>
+                <div class="book-card">
+                    <img src="https://covers.openlibrary.org/b/isbn/9781250069788-M.jpg">
+                    <p>Big Little Lies<br>Liane Moriarty</p>
+                </div>
             </div>
-            <div class="book-card">
-              <img src="https://covers.openlibrary.org/b/isbn/9780307949486-M.jpg">
-              <p>The Girl with the Dragon Tattoo<br>Stieg Larsson</p>
-            </div>
-            <div class="book-card">
-              <img src="https://covers.openlibrary.org/b/isbn/9781250069788-M.jpg">
-              <p>Big Little Lies<br>Liane Moriarty</p>
-            </div>
-          </div>
         </div>
+
         <div class="genre-section">
-          <p class="genre-title" onclick="toggle('scifi')">Science Fiction & Fantasy ▼</p>
-          <div id="scifi" class="book-grid" style="display:none">
-            <div class="book-card">
-              <img src="https://covers.openlibrary.org/b/isbn/9780441013593-M.jpg">
-              <p>Dune<br>Frank Herbert</p>
+            <p class="genre-title" onclick="toggle('scifi')">Science Fiction & Fantasy ▼</p>
+            <div id="scifi" class="book-grid" style="display:none">
+                <div class="book-card">
+                    <img src="https://covers.openlibrary.org/b/isbn/9780441013593-M.jpg">
+                    <p>Dune<br>Frank Herbert</p>
+                </div>
+                <div class="book-card">
+                    <img src="https://covers.openlibrary.org/b/isbn/9780547928227-M.jpg">
+                    <p>The Hobbit<br>J.R.R. Tolkien</p>
+                </div>
+                <div class="book-card">
+                    <img src="https://covers.openlibrary.org/b/isbn/9781635575569-M.jpg">
+                    <p>A Court of Thorns and Roses<br>Sarah J. Maas</p>
+                </div>
             </div>
-            <div class="book-card">
-              <img src="https://covers.openlibrary.org/b/isbn/9780547928227-M.jpg">
-              <p>The Hobbit<br>J.R.R. Tolkien</p>
-            </div>
-            <div class="book-card">
-              <img src="https://covers.openlibrary.org/b/isbn/9781635575569-M.jpg">
-              <p>A Court of Thorns and Roses<br>Sarah J. Maas</p>
-            </div>
-          </div>
         </div>
+
         <div class="genre-section">
-          <p class="genre-title" onclick="toggle('romance')">Romance ▼</p>
-          <div id="romance" class="book-grid" style="display:none">
-            <div class="book-card">
-              <img src="https://covers.openlibrary.org/b/isbn/9781538728529-M.jpg">
-              <p>The Notebook<br>Nicholas Sparks</p>
+            <p class="genre-title" onclick="toggle('romance')">Romance ▼</p>
+            <div id="romance" class="book-grid" style="display:none">
+                <div class="book-card">
+                    <img src="https://covers.openlibrary.org/b/isbn/9781538728529-M.jpg">
+                    <p>The Notebook<br>Nicholas Sparks</p>
+                </div>
+                <div class="book-card">
+                    <img src="https://covers.openlibrary.org/b/isbn/9780440212560-M.jpg">
+                    <p>Outlander<br>Diana Gabaldon</p>
+                </div>
+                <div class="book-card">
+                    <img src="https://covers.openlibrary.org/b/isbn/9781501156700-M.jpg">
+                    <p>It Ends with Us<br>Colleen Hoover</p>
+                </div>
             </div>
-            <div class="book-card">
-              <img src="https://covers.openlibrary.org/b/isbn/9780440212560-M.jpg">
-              <p>Outlander<br>Diana Gabaldon</p>
-            </div>
-            <div class="book-card">
-              <img src="https://covers.openlibrary.org/b/isbn/9781501156700-M.jpg">
-              <p>It Ends with Us<br>Colleen Hoover</p>
-            </div>
-          </div>
         </div>
+
         <script>
-          function toggle(id) {
-            var el = document.getElementById(id);
-            if (el.style.display === 'none') {
-              el.style.display = 'grid';
-            } else {
-              el.style.display = 'none';
+            function toggle(id) {
+                var el = document.getElementById(id);
+                if (el.style.display === 'none') {
+                    el.style.display = 'grid';
+                } else {
+                    el.style.display = 'none';
+                }
             }
-          }
         </script>
+
         <a href="index.html">Back to Home</a>
     </body>
 </html>

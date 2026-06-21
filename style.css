@@ -66,3 +66,10 @@ body {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.6);
+    color: #f0e6d3;
+    font-size: 14px;
+}

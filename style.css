@@ -44,3 +44,17 @@ body {
                 text-decoration: none;
                 font-size: 18px;
             }
+            nav a:hover {
+    color: #f0e6d3;
+    transition: color 0.3s;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.genre-title:hover {
+    color: #f0e6d3;
+    transition: color 0.3s;
+}

@@ -3,26 +3,87 @@
     <head>
         <title>Author Spotlights</title>
         <link rel="stylesheet" href="style.css">
+        <style>
+            .author-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                max-width: 900px;
+                margin: 30px auto;
+            }
+            .author-card {
+                background: rgba(0,0,0,0.5);
+                border-radius: 10px;
+                padding: 20px;
+                text-align: center;
+                transition: transform 0.3s;
+            }
+            .author-card:hover {
+                transform: scale(1.05);
+            }
+            .author-card img {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 3px solid #4db8c4;
+            }
+            .author-card h3 {
+                color: #4db8c4;
+                margin: 10px 0 5px;
+                font-size: 18px;
+            }
+            .author-card p {
+                font-size: 13px;
+                color: #f0e6d3;
+            }
+        </style>
     </head>
     <body>
-       <nav>
+        <nav>
             <a href="index.html">Home</a>
             <a href="books.html">Books</a>
-            <a href="read-group.html">Reading Groups</a>
+            <a href="reading-group.html">Reading Groups</a>
             <a href="authors.html">Authors</a>
-    </nav>
-        <h1>Author Spotlights</h1> 
+        </nav>
+        <h1>Author Spotlights</h1>
         <p>Dive into the lives and works of some of the most influential authors in literature.</p>
-        <ul>
-            <li><a href="#">Jane Austen</a></li>
-            <li><a href="#">George Orwell</a></li>
-            <li><a href="#">J.K. Rowling</a></li>
-            <li><a href="#">Ernest Hemingway</a></li>
-            <li><a href="#">Toni Morrison</a></li>
-        </ul>
-        <a href="index.html">Back to Home</a>
+
+        <div class="author-grid">
+            <div class="author-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Janeeausten.jpg/440px-Janeeausten.jpg">
+                <h3>Jane Austen</h3>
+                <p>English novelist known for Pride and Prejudice and Sense and Sensibility. A master of wit and social commentary.</p>
+            </div>
+            <div class="author-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/George_Orwell_press_photo.jpg/440px-George_Orwell_press_photo.jpg">
+                <h3>George Orwell</h3>
+                <p>Author of 1984 and Animal Farm. Known for his sharp political writing and dystopian fiction.</p>
+            </div>
+            <div class="author-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/J._K._Rowling_2010.jpg/440px-J._K._Rowling_2010.jpg">
+                <h3>J.K. Rowling</h3>
+                <p>Creator of the Harry Potter series. One of the best-selling authors of all time.</p>
+            </div>
+            <div class="author-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Ernest_Hemingway_1923_passport_photo.jpg/440px-Ernest_Hemingway_1923_passport_photo.jpg">
+                <h3>Ernest Hemingway</h3>
+                <p>Nobel Prize winner known for The Old Man and the Sea and A Farewell to Arms.</p>
+            </div>
+            <div class="author-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Toni_Morrison_2008-2.jpg/440px-Toni_Morrison_2008-2.jpg">
+                <h3>Toni Morrison</h3>
+                <p>Nobel Prize winning author of Beloved. A powerful voice in American literature.</p>
+            </div>
+            <div class="author-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Frank_Herbert_-_1984.jpg/440px-Frank_Herbert_-_1984.jpg">
+                <h3>Frank Herbert</h3>
+                <p>Author of the legendary Dune series. A pioneer of science fiction worldbuilding.</p>
+            </div>
+        </div>
+
         <footer>
-    <p>© 2026 Reader's Safe Haven | Made with ❤️ </p>
-</footer>
+            <p>© 2026 Reader's Safe Haven | Made with ❤️</p>
+        </footer>
     </body>
-    </html> 
+</html>

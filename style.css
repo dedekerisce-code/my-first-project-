@@ -1,0 +1,46 @@
+body {
+                font-family: 'segoe script', cursive;
+                background-color: #1a1209;
+                background-image: url('https://images.unsplash.com/photo-1728506972831-193841eb2961?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+                background-size: cover;
+                background-position: center;
+                color: #f0e6d3;
+                text-align: center;
+                padding: 50px;
+                padding-top: 80px;
+           }
+            h1 {
+                color: #4db8c4;
+                font-size: 48px;
+            }
+            p {
+                font-size: 24px;
+            }
+            a {
+                color: #4db8c4;
+                text-decoration: none;
+                font-size: 20px;
+            }
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            li {
+                margin: 15px 0;
+            }
+             nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+            nav a {
+                color: #4db8c4;
+                margin: 0 20px;
+                text-decoration: none;
+                font-size: 18px;
+            }

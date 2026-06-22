@@ -6,7 +6,7 @@ body {
                 background-position: center;
                 color: #f0e6d3;
                 text-align: center;
-                padding: 50px;
+                padding: 80px 20px 20px;
            }
             h1 {
                 color: #4db8c4;
@@ -72,4 +72,39 @@ footer {
     background-color: rgba(0,0,0,0.6);
     color: #f0e6d3;
     font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+
+    body {
+        padding: 80px 15px 15px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .book-grid,
+    .author-grid,
+    .group-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .book-card img {
+        width: 120px;
+        height: 180px;
+    }
 }
